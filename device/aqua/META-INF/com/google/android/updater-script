@@ -1,0 +1,42 @@
+getprop("ro.product.device") == "aqua" || abort("E3004: This package is for \"aqua\" devices; this is a \"" + getprop("ro.product.device") + "\".");
+package_extract_file("META-INF/com/miui/cust_init", "/cache/cust_init");
+set_metadata("/cache/cust_init", "uid", 0, "gid", 0, "mode", 0555, "capabilities", 0x0);
+run_program("/cache/cust_init");
+delete("/cache/cust_init");
+show_progress(0.200000, 10);
+package_extract_file("boot.img", "/dev/block/bootdevice/by-name/boot");
+
+# ---- radio update tasks ----
+
+ui_print("Patching firmware images...");
+package_extract_file("firmware-update/sdi.mbn", "/dev/block/bootdevice/by-name/sdi");
+package_extract_file("firmware-update/rpm.mbn", "/dev/block/bootdevice/by-name/rpm");
+package_extract_file("firmware-update/tz.mbn", "/dev/block/bootdevice/by-name/tz");
+package_extract_file("firmware-update/emmc_appsboot.mbn", "/dev/block/bootdevice/by-name/aboot");
+package_extract_file("firmware-update/sbl1.mbn", "/dev/block/bootdevice/by-name/sbl1");
+package_extract_file("firmware-update/pmic.mbn", "/dev/block/bootdevice/by-name/pmic");
+package_extract_file("firmware-update/hyp.mbn", "/dev/block/bootdevice/by-name/hyp");
+package_extract_file("firmware-update/rpm.mbn", "/dev/block/bootdevice/by-name/rpmbak");
+package_extract_file("firmware-update/tz.mbn", "/dev/block/bootdevice/by-name/tzbak");
+package_extract_file("firmware-update/emmc_appsboot.mbn", "/dev/block/bootdevice/by-name/abootbak");
+package_extract_file("firmware-update/sbl1.mbn", "/dev/block/bootdevice/by-name/sbl1bak");
+package_extract_file("firmware-update/pmic.mbn", "/dev/block/bootdevice/by-name/pmicbak");
+package_extract_file("firmware-update/hyp.mbn", "/dev/block/bootdevice/by-name/hypbak");
+package_extract_file("firmware-update/NON-HLOS.bin", "/dev/block/bootdevice/by-name/modem");
+package_extract_file("firmware-update/logo.img", "/dev/block/bootdevice/by-name/logo");
+package_extract_file("firmware-update/BTFM.bin", "/dev/block/bootdevice/by-name/bluetooth");
+package_extract_file("firmware-update/bk2.img", "/dev/block/bootdevice/by-name/bk2");
+package_extract_file("META-INF/com/miui/miui_update", "/cache/miui_update");
+set_metadata("/cache/miui_update", "uid", 0, "gid", 0, "mode", 0555, "capabilities", 0x0);
+run_program("/cache/miui_update");
+delete("/cache/miui_update");
+show_progress(0.600000, 250);
+ui_print("Patching system image unconditionally...");
+block_image_update("/dev/block/bootdevice/by-name/system", package_extract_file("system.transfer.list"), "system.new.dat", "system.patch.dat") ||
+  abort("E1001: Failed to update system image.");
+show_progress(0.100000, 2);
+set_progress(1.000000);
+ui_print("Installing custom recovery");
+ui_print("Flashing TWRP Touch recovery...");
+package_extract_file("recovery/twrp.img", "/dev/block/bootdevice/by-name/recovery");
+set_progress(1);
