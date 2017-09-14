@@ -1,5 +1,4 @@
 getprop("ro.product.device") == "tiffany" || abort("E3004: This package is for \"tiffany\" devices; this is a \"" + getprop("ro.product.device") + "\".");
-ui_print("Target: xiaomi/tiffany/tiffany:7.1.2/N2G47H/7.8.10:user/release-keys");
 show_progress(0.200000, 10);
 package_extract_file("boot.img", "/dev/block/bootdevice/by-name/boot");
 
