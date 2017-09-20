@@ -1,6 +1,5 @@
 getprop("ro.product.device") == "leo" || abort("E3004: This package is for \"leo\" devices; this is a \"" + getprop("ro.product.device") + "\".");
 show_progress(0.200000, 10);
-mount("ext4", "EMMC", "/dev/block/bootdevice/by-name/userdata", "/data", "");
 package_extract_file("boot.img", "/dev/block/bootdevice/by-name/boot");
 
 # ---- radio update tasks ----
@@ -33,10 +32,3 @@ block_image_update("/dev/block/bootdevice/by-name/system", package_extract_file(
   abort("E1001: Failed to update system image.");
 show_progress(0.100000, 2);
 set_progress(1.000000);
-ui_print("Flashing app on partition data...");
-package_extract_dir("data", "/data");
-unmount("/data");
-ui_print("Installing custom recovery");
-ui_print("Flashing TWRP Touch recovery...");
-package_extract_file("recovery/twrp.img", "/dev/block/bootdevice/by-name/recovery");
-set_progress(1);
