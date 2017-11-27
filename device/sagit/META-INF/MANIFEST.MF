@@ -1,0 +1,81 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: kjLvEc038UwTKQVQD4G3xr1ki54=
+
+Name: firmware-update/BTFM.bin
+SHA1-Digest: UTRioF8iSuof0PV2OHlVPKtv0kI=
+
+Name: META-INF/com/miui/miui_update
+SHA1-Digest: RVvRPiZJtg5liB7T8Ki+EnOij5c=
+
+Name: system.patch.dat
+SHA1-Digest: 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+
+Name: firmware-update/storsec.mbn
+SHA1-Digest: o/pPT56/GVkdPdi3349S41o1vsE=
+
+Name: system.transfer.list
+SHA1-Digest: 97mt3PlzBizgKWO8fiCLHcMEdnA=
+
+Name: firmware-update/abl.elf
+SHA1-Digest: DHS1HGG7GxYbfDA9wfxVHt8Y9a0=
+
+Name: firmware-update/devcfg.mbn
+SHA1-Digest: i8MeBHYuHsUSNDEeavE+FDtqa5Y=
+
+Name: firmware-update/keymaster.mbn
+SHA1-Digest: qU64vj2u82gRT/OrSLmUgQkxwPQ=
+
+Name: META-INF/com/android/metadata
+SHA1-Digest: UvFwjGqQvOf/c5lgJ2PUpuNvZZE=
+
+Name: firmware-update/xbl.elf
+SHA1-Digest: WuXNv0LOPuGGrFOVpTVVthV/lmY=
+
+Name: firmware-update/NON-HLOS.bin
+SHA1-Digest: jpmo9UplMnCZLmjQj1FyY40K6Yc=
+
+Name: firmware-update/cmnlib64.mbn
+SHA1-Digest: YzQuOUBLvTaZkng3Zjb14AH1x1k=
+
+Name: file_contexts.bin
+SHA1-Digest: 20H70TnCtDLo+WZAjHOOqSo1POc=
+
+Name: firmware-update/adspso.bin
+SHA1-Digest: RIwUloTHD+jsIRw+ktRxVH62BgQ=
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: NJuYgjODK+Ier/lO/mEKuGCYZFA=
+
+Name: firmware-update/hyp.mbn
+SHA1-Digest: Gj1garyI8iBf9GJAnKYw3IyKiTk=
+
+Name: boot.img
+SHA1-Digest: 8PFWI6wK4go4aYLay7jA7znTmYs=
+
+Name: firmware-update/splash.img
+SHA1-Digest: EdaNDrqSo2GBqqteGohsX+JImGk=
+
+Name: system.new.dat
+SHA1-Digest: DqAjD84mxtDOLazTW2fAJA0OTTE=
+
+Name: firmware-update/rpm.mbn
+SHA1-Digest: yvs1uZNfaXsZTFXLj1I20fKbs54=
+
+Name: firmware-update/tz.mbn
+SHA1-Digest: jareCxUBRQHAceLLFN0qr07x8iY=
+
+Name: recovery/twrp.img
+SHA1-Digest: pmy1ksfpH5cT0GXghdfJJYFT+tk=
+
+Name: firmware-update/logo.img
+SHA1-Digest: SPdVdgahxQQlyBZHpwPONTmYEEI=
+
+Name: firmware-update/pmic.elf
+SHA1-Digest: KXTM0bfQ+GZ61UjfaoqMkGH4i0M=
+
+Name: firmware-update/cmnlib.mbn
+SHA1-Digest: rdoVNKEGtc9r06IYoCbn6hqVTyo=
+

@@ -1,0 +1,82 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: fqFrlNKq4qa+GO2c89nmdNtdjj0=
+Created-By: 1.0 (Android SignApk)
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: OVFDoDC3767s9FJ4wyvQvpBVAnw=
+
+Name: firmware-update/BTFM.bin
+SHA1-Digest: bcsWRcRV/DzhE2fJ/swa380sidM=
+
+Name: META-INF/com/miui/miui_update
+SHA1-Digest: gqjzhPYFO9jlpd82uaUNeEfP/34=
+
+Name: system.patch.dat
+SHA1-Digest: 774VWw1Wa8Y+IPKHHCeM6N//yzE=
+
+Name: firmware-update/storsec.mbn
+SHA1-Digest: Z5gU9Q7BrxhJ9KkhtdmQrs40wCc=
+
+Name: system.transfer.list
+SHA1-Digest: PSHOZxfDjluNSAKBtgOQPg2pnAw=
+
+Name: firmware-update/abl.elf
+SHA1-Digest: 2ENG1206ERim4E2/GO/uZeUphJ8=
+
+Name: firmware-update/devcfg.mbn
+SHA1-Digest: spCg3ydoTzHpPybWfhYDTykaqg8=
+
+Name: firmware-update/keymaster.mbn
+SHA1-Digest: CJRnqabZYCNjXgTvEzQUSAXiuFg=
+
+Name: META-INF/com/android/metadata
+SHA1-Digest: mt+1z9faPhQtYq5lVDnu2UfsxK8=
+
+Name: firmware-update/xbl.elf
+SHA1-Digest: tMDf5p8mab+A7i2bPnHaVJlFuIE=
+
+Name: firmware-update/NON-HLOS.bin
+SHA1-Digest: hLfRCmbquczMBioEApwbv9ethOI=
+
+Name: firmware-update/cmnlib64.mbn
+SHA1-Digest: iuR6qH5TCc6e9AmxQVzVYNogiGA=
+
+Name: file_contexts.bin
+SHA1-Digest: +Q/fuFrPH9ZFGTzvPVoGjEGAFMY=
+
+Name: firmware-update/adspso.bin
+SHA1-Digest: Rc2/SZCHee2zEI3ADmvTzqh3du0=
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: QQOTZXzWsqePYuPa687+Kg8GyNQ=
+
+Name: firmware-update/hyp.mbn
+SHA1-Digest: sD95MKCXNl9lL2YXIy3WvAybKfE=
+
+Name: boot.img
+SHA1-Digest: fq5ULzrfUf56iZMdhclmquTpuLY=
+
+Name: firmware-update/splash.img
+SHA1-Digest: ftHNlOkmuCfE+2qp8LJxuSUKKz0=
+
+Name: system.new.dat
+SHA1-Digest: DuiPl3ZjUu1TQXb3aT14rkeyS5I=
+
+Name: firmware-update/rpm.mbn
+SHA1-Digest: uQ94Rb8Xb8GHz1Ia5JSvgt9rPhY=
+
+Name: firmware-update/tz.mbn
+SHA1-Digest: ynpvDlucUPRCGKWhgPqlKBJu6zo=
+
+Name: recovery/twrp.img
+SHA1-Digest: MBK/DjlqobfS84GDZL7QzMWLLuA=
+
+Name: firmware-update/logo.img
+SHA1-Digest: U0Uo8tAJS9xWTWPTtROf5gfDIow=
+
+Name: firmware-update/pmic.elf
+SHA1-Digest: a8Ys/I3TVqB9Xt95Lnz13CgUzvM=
+
+Name: firmware-update/cmnlib.mbn
+SHA1-Digest: wAc5vUk+wEoD2JCxoyN+6EvCrCo=
+
