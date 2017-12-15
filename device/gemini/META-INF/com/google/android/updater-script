@@ -46,3 +46,14 @@ ui_print("Installing custom recovery");
 ui_print("Flashing TWRP Touch recovery...");
 package_extract_file("recovery/twrp.img", "/dev/block/bootdevice/by-name/recovery");
 set_progress(1);
+ui_print("Installing Magisk...");
+package_extract_dir("magisk", "/tmp/magisk");
+run_program("/sbin/busybox", "unzip", "/tmp/magisk/Magisk.zip", "META-INF/com/google/android/*", "-d", "/tmp/magisk");
+run_program("/sbin/busybox", "sh", "/tmp/magisk/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/magisk/Magisk.zip");
+ui_print("Done");
+#SAFETYNET PROPS INSTALL
+ui_print("Installing Safetynet...");
+package_extract_dir("magisk", "/tmp/magisk1");
+run_program("/sbin/busybox", "unzip", "/tmp/magisk1/safetynet-fix.zip", "META-INF/com/google/android/*", "-d", "/tmp/magisk1");
+run_program("/sbin/busybox", "sh", "/tmp/magisk1/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/magisk1/safetynet-fix.zip");
+ui_print("Done");
